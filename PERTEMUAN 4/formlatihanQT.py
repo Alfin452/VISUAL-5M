@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\muham\Music\ANDROID\latihanQT.ui'
+# Form implementation generated from reading ui file 'latihanQT.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -22,9 +22,15 @@ class Ui_MainWindow(object):
         self.pushButton1.setObjectName("pushButton1")
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit.setGeometry(QtCore.QRect(150, 40, 191, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit.setFont(font)
         self.lineEdit.setObjectName("lineEdit")
         self.lineEdit_2 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_2.setGeometry(QtCore.QRect(150, 90, 191, 31))
+        self.lineEdit_2.setGeometry(QtCore.QRect(150, 90, 201, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.lineEdit_2.setFont(font)
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.pushButton2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton2.setGeometry(QtCore.QRect(270, 150, 111, 41))
@@ -65,6 +71,8 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton1.setText(_translate("MainWindow", "PushButton1"))
+        self.lineEdit.setText(_translate("MainWindow", "2210010359"))
+        self.lineEdit_2.setText(_translate("MainWindow", "Muhammad Alfin Nur Huda"))
         self.pushButton2.setText(_translate("MainWindow", "PushButton2"))
         self.label.setText(_translate("MainWindow", "NIM"))
         self.label_2.setText(_translate("MainWindow", "NAMA"))
