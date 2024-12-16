@@ -36,12 +36,19 @@ class Ui_Form(object):
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.pushButtonCreateDb = QtWidgets.QPushButton(self.horizontalLayoutWidget_2)
         self.pushButtonCreateDb.setObjectName("pushButtonCreateDb")
+
+        self.pushButtonCreateDb.clicked.connect(self.create_database)
         self.horizontalLayout_2.addWidget(self.pushButtonCreateDb)
         self.pushButtonDbcon = QtWidgets.QPushButton(self.horizontalLayoutWidget_2)
         self.pushButtonDbcon.setObjectName("pushButtonDbcon")
+
+        self.pushButtonDbcon.clicked.connect(self.db_connect)
         self.horizontalLayout_2.addWidget(self.pushButtonDbcon)
         self.labelResult = QtWidgets.QLabel(Form)
         self.labelResult.setGeometry(QtCore.QRect(30, 220, 251, 16))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.labelResult.setFont(font)
         self.labelResult.setObjectName("labelResult")
 
         self.retranslateUi(Form)
